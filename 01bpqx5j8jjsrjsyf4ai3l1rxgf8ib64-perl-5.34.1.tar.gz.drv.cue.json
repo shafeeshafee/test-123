@@ -1,0 +1,98 @@
+{
+    "_type": "https://in-toto.io/Statement/v0.1",
+    "subject": [
+        {
+            "name": "/nix/store/k8h7cf8id214i47c28i2ls0hnn5ampb1-perl-5.34.1.tar.gz",
+            "digest": {
+                "sha256": "296976af966f9d0627da626655eeddde2c2cdc7bb45faf5ae3060350b2cea7bf"
+            }
+        }
+    ],
+    "predicateType": "https://slsa.dev/provenance/v0.2",
+    "predicate": {
+        "builder": {
+            "id": "file:///nix/store/14lypyys4gfcl982rjddxa6jg7msqz9q-bash-5.1-p16/bin/bash"
+        },
+        "buildType": "https://nixos.org/build/0.1",
+        "invocation": {
+            "parameters": {
+                "args": [
+                    "-e",
+                    "/nix/store/720ikgx7yaapyb8hvi8lkicjqwzcx3xr-builder.sh"
+                ]
+            },
+            "environment": {
+                "SSL_CERT_FILE": "/no-cert-file.crt",
+                "buildInputs": "",
+                "builder": "/nix/store/14lypyys4gfcl982rjddxa6jg7msqz9q-bash-5.1-p16/bin/bash",
+                "configureFlags": "",
+                "curlOpts": "",
+                "depsBuildBuild": "",
+                "depsBuildBuildPropagated": "",
+                "depsBuildTarget": "",
+                "depsBuildTargetPropagated": "",
+                "depsHostHost": "",
+                "depsHostHostPropagated": "",
+                "depsTargetTarget": "",
+                "depsTargetTargetPropagated": "",
+                "doCheck": "",
+                "doInstallCheck": "",
+                "downloadToTemp": "",
+                "executable": "",
+                "impureEnvVars": "http_proxy https_proxy ftp_proxy all_proxy no_proxy NIX_CURL_FLAGS NIX_HASHED_MIRRORS NIX_CONNECT_TIMEOUT NIX_MIRRORS_alsa NIX_MIRRORS_apache NIX_MIRRORS_bioc NIX_MIRRORS_bitlbee NIX_MIRRORS_centos NIX_MIRRORS_cpan NIX_MIRRORS_debian NIX_MIRRORS_fedora NIX_MIRRORS_gcc NIX_MIRRORS_gentoo NIX_MIRRORS_gnome NIX_MIRRORS_gnu NIX_MIRRORS_gnupg NIX_MIRRORS_hackage NIX_MIRRORS_hashedMirrors NIX_MIRRORS_ibiblioPubLinux NIX_MIRRORS_imagemagick NIX_MIRRORS_kde NIX_MIRRORS_kernel NIX_MIRRORS_luarocks NIX_MIRRORS_maven NIX_MIRRORS_mozilla NIX_MIRRORS_mysql NIX_MIRRORS_openbsd NIX_MIRRORS_opensuse NIX_MIRRORS_osdn NIX_MIRRORS_postgresql NIX_MIRRORS_pypi NIX_MIRRORS_roy NIX_MIRRORS_sageupstream NIX_MIRRORS_samba NIX_MIRRORS_savannah NIX_MIRRORS_sourceforge NIX_MIRRORS_steamrt NIX_MIRRORS_tcsh NIX_MIRRORS_testpypi NIX_MIRRORS_ubuntu NIX_MIRRORS_xfce NIX_MIRRORS_xorg",
+                "mirrorsFile": "/nix/store/329sc60bps6ql9ds0yd81jg165mia0sr-mirrors-list",
+                "name": "perl-5.34.1.tar.gz",
+                "nativeBuildInputs": "/nix/store/d4cgk001fq0lsmfbz1a1dfgwlq4d62c8-curl-7.83.1-dev",
+                "nixpkgsVersion": "22.05",
+                "out": "/nix/store/k8h7cf8id214i47c28i2ls0hnn5ampb1-perl-5.34.1.tar.gz",
+                "outputHash": "sha256-NXlRpJGwuhzjYRJjki/ux4zNWB3dwkpEawM+JazyQqE=",
+                "outputHashAlgo": "sha256",
+                "outputHashMode": "flat",
+                "outputs": "out",
+                "patches": "",
+                "postFetch": "",
+                "preferHashedMirrors": "1",
+                "preferLocalBuild": "1",
+                "propagatedBuildInputs": "",
+                "propagatedNativeBuildInputs": "",
+                "showURLs": "",
+                "stdenv": "/nix/store/lmj98vlk5h0v1x5gzslxjnaj4m58dwxm-stdenv-linux",
+                "strictDeps": "",
+                "system": "x86_64-linux",
+                "urls": "mirror://cpan/src/5.0/perl-5.34.1.tar.gz"
+            }
+        },
+        "materials": [
+            {
+                "uri": "file:///nix/store/720ikgx7yaapyb8hvi8lkicjqwzcx3xr-builder.sh",
+                "digest": {
+                    "sha256": "f376a89dbfda67d35c173d310246ed48d4c400d6175edc6c01a81c7b2aec45ed"
+                }
+            },
+            {
+                "uri": "file:///nix/store/3ga8qx6a74j26sy0yyvnqnxp6mva1b1z-stdenv-linux.drv",
+                "digest": {
+                    "sha256": "f9bc13b9bdaa3cce0106294eeec282b55ca6f4f2d0b2d11e04685a22f7cb5170"
+                }
+            },
+            {
+                "uri": "file:///nix/store/dgls6fvghffm7ylv634lqkb2xg4zv86y-mirrors-list.drv",
+                "digest": {
+                    "sha256": "064051d5923c4d29dac3506154585f407660c2dbea7b5f70436157dc16341990"
+                }
+            },
+            {
+                "uri": "file:///nix/store/h2zp5pvdyc2d9rv97fgs1y20rbly70cm-bash-5.1-p16.drv",
+                "digest": {
+                    "sha256": "2a32dcb5fac84e74f5bb62a9e8f7698e9367fd00e3a2b8b82163309c2025c049"
+                }
+            },
+            {
+                "uri": "file:///nix/store/y1scbxhjd8ydivljdmv3087kz1jgmasy-curl-7.83.1.drv",
+                "digest": {
+                    "sha256": "773935e57450276be57b7103ae312b99c5696e90bec1d06a31bfb681e4909f76"
+                }
+            }
+        ]
+    }
+}
